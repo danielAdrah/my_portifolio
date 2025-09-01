@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flutter Developer Portfolio</title>
+
+    <!-- External Libraries -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Portfolio</a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <button class="theme-toggle" id="theme-toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content" data-aos="fade-up">
+          <div class="hero-text">
+            <h1 class="hero-title">Hi, I'm Daniel Adrah</h1>
+            <h2 class="hero-subtitle">Flutter Developer</h2>
+            <p class="hero-description">
+              I'm a Results-driven Flutter Developer with over 3 years of
+              experience in building high-performance mobile applications.
+              Proficient in Dart, RESTful APIs, and state management solutions
+              like Bloc and Getx. Passionate about delivering user-friendly
+              solutions and optimizing app performance.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+          <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+            <div class="image-container">
+              <img src="img/me.jpg" alt="Profile Picture" class="profile-img" />
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            Passionate about creating beautiful, performant mobile experiences
+          </p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right">
+            <h3>Flutter Developer & Mobile App Enthusiast</h3>
+            <p>
+              Have extensive experience in Flutter development, I specialize in
+              creating high-performance, cross-platform mobile applications. My
+              expertise spans across the entire Flutter ecosystem, from
+              traditional mobile apps to cutting-edge web applications using the
+              latest rendering technologies.
+            </p>
+            <p>
+              with a proven track record in crafting high-performance,
+              cross-platform mobile applications. Skilled in optimizing app
+              performance, implementing efficient state management solutions,
+              and designing engaging UI experiences. Demonstrated ability to
+              deliver tailored solutions that exceed client expectations.
+            </p>
+          </div>
+
+          <div class="skills-grid" data-aos="fade-left" data-aos-delay="200">
+            <div class="skill-category">
+              <h4><i class="fab fa-flutter"></i> Flutter Expertise</h4>
+              <ul>
+                <li>Cross-platform Development</li>
+                <li>State Management (Bloc, Provider, GetX)</li>
+                <li>Custom Widgets & Animations</li>
+                <li>Performance Optimization</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h4><i class="fas fa-cogs"></i> Advanced Features</h4>
+              <ul>
+                <li>Custom Render Objects</li>
+                <li>Isolates & Compute Functions</li>
+                <li>Method Channels & FFI</li>
+                <li>Code Generation & Macros</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h4><i class="fas fa-tools"></i> Development Tools</h4>
+              <ul>
+                <li>Dart Programming</li>
+                <li>Firebase Integration</li>
+                <li>REST APIs & GraphQL</li>
+                <li>Git Version Control</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h4><i class="fas fa-mobile-alt"></i> Platforms</h4>
+              <ul>
+                <li>iOS Development</li>
+                <li>Android Development</li>
+                <li>Web Applications</li>
+                <li>Desktop Apps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">
+            Showcasing my Flutter development expertise
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <img src="img/expensewise.png" alt="Expense Tracker" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/danielAdrah/ExpenseWise"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Expense Wise (Expense Tracker)</h3>
+              <p>
+                A full-featured expense tracking application built with Flutter,
+                featuring effortless logging, expense categorization, analysis
+                of expenses, real-time insights into spending patterns, and
+                alert system for exceeding budget limits.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Api</span>
+                <span class="tech-tag">Bloc</span>
+                <span class="tech-tag">Custom Rendering</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+              <img src="img/beatbox.png" alt="Music Player App" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/danielAdrah/beatbox"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>BeatBox (Music Player)</h3>
+              <p>
+                BeatBox is a feature-rich music streaming application ,
+                incorporating advanced audio playback capabilities and a
+                userfriendly interface. This app showcases proficiency in
+                various Flutter packages and services, demonstrating expertise
+                in mobile app development.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Audio-query</span>
+                <span class="tech-tag">Background Services</span>
+                <span class="tech-tag">Themeing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-image">
+              <img src="img/studymate.png" alt="study mate" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/danielAdrah/studyMate"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Study Mate (Educational App)</h3>
+              <p>
+                A comprehensive educational platform that streamlines course
+                management, student-professor interaction, and administrative
+                tasks for educational institutions. Created a notification
+                system that increased user engagement, ensuring timely updates
+                and reminders for courses, events, and important announcements.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Msg notification</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">GetX</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-image">
+              <img src="img/fashionworld.png" alt="fashionworld" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/danielAdrah/fashion_world"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Fashion World</h3>
+              <p>
+                A comprehensive fashion marketplace built with Flutter, enabling
+                customers to browse and purchase clothing while designers can
+                showcase collections, publish designs, and manage incoming
+                orders through an intuitive dashboard with real-time
+                notifications.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Auth</span>
+                <span class="tech-tag">Dart</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="project-image">
+              <img src="img/ecommerce.png" alt="e-commerce" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/danielAdrah"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-commerce App</h3>
+              <p>
+                A feature-rich e-commerce application built with Flutter,
+                offering seamless product browsing, secure checkout, and
+                personalized recommendations for customers, while providing
+                merchants with a comprehensive dashboard for inventory
+                management, order processing, and sales analytics with real-time
+                updates.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">MQTT</span>
+                <span class="tech-tag">Desktop</span>
+                <span class="tech-tag">Animations</span>
+                <span class="tech-tag">BLoC</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="project-image">
+              <img src="img/sneakershop.png" alt="sneaker App" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/danielAdrah/shoe-E-commerce"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Sneaker Shop App</h3>
+              <p>
+                A specialized sneaker marketplace built with Flutter, featuring
+                high-quality product visualization, size recommendations, and
+                limited-edition releases for sneaker enthusiasts. Includes
+                authentication, wishlist functionality, and push notifications
+                for new drops and exclusive offers.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Hive</span>
+                <span class="tech-tag">Animations</span>
+                <span class="tech-tag">Offline</span>
+                <span class="tech-tag">Ui/Ux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Let's discuss your next Flutter project
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Let's Connect</h3>
+            <p>
+              I'm always interested in new opportunities and exciting Flutter
+              projects. Whether you need a mobile app, web application, or
+              cross-platform solution, I'd love to hear from you.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>adrahdaniel29@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+963 991391923</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Tartous, Syria</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://github.com/danielAdrah"
+                class="social-link"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/daniel-adrah-1b7a1a2bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="social-link"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/daniel.adrah.35"
+                class="social-link"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- EmailJS for contact form -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
